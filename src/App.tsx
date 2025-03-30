@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-farmer-50">
         <Navbar />
-        <main className="container mx-auto">
+        <main className="mx-auto">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/sustainability" element={<SustainabilityDashboard />} />

@@ -6,10 +6,9 @@ import FeaturesSection from "./landing/FeaturesSection";
 import TestimonialsSection from "./landing/TestimonialsSection";
 import CTASection from "./landing/CTASection";
 
-
 const LandingPage = () => {
   return (
-    <div className="relative min-h-screen bg-white overflow-x-hidden">
+    <div className="relative min-h-screen w-full bg-white overflow-x-hidden">
        <CustomCursor />
        <HeroSection />
        <MissionSection />
