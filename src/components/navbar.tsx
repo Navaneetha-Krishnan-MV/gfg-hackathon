@@ -1,20 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { LeafyGreen, DollarSign, House } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="bg-farmer-600 text-white py-3 px-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-      <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold tracking-wider text-white hover:text-white">
-              AGROSAGE
-            </Link>
+        <div className="flex items-center">
+          <Link to="/" className="text-2xl font-bold tracking-wider text-white hover:text-white">
+            AGROSAGE
+          </Link>
         </div>
-        <div className="flex space-x-2">
+        <button
+          className="lg:hidden text-white focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } lg:flex lg:space-x-2 flex-col lg:flex-row space-y-2 lg:space-y-0`}
+        >
           <Link to="/">
             <Button
               variant={location.pathname === "/sustainability" ? "secondary" : "ghost"}
