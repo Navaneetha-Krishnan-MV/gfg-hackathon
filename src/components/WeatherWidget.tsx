@@ -13,7 +13,7 @@ const WeatherWidget: React.FC = () => {
 
   const fetchWeatherData = async (latitude: number, longitude: number) => {
     try {
-      const response = await fetch(`https://gfg-hackathon-okcl.onrender.com/weather?lat=${latitude}&lon=${longitude}`);
+      const response = await fetch(`${import.meta.env.VITE_API_BASE}/weather?lat=${latitude}&lon=${longitude}`);
       const data = await response.json();
       setWeather({
         temp: data.temperature,
