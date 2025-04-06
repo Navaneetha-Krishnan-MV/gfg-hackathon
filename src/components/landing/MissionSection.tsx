@@ -16,7 +16,7 @@ const MissionSection = () => {
           >
             <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
             <p className="text-lg text-gray-700 mb-6">
-              At FarmTech, we're dedicated to transforming agriculture through data-driven insights and sustainable practices. 
+              At AgroSage, we're dedicated to transforming agriculture through data-driven insights and sustainable practices. 
               Our AI-powered platform helps farmers reduce water usage, minimize pesticide application, prevent soil degradation, 
               and lower their carbon footprint while improving yields and profitability.
             </p>

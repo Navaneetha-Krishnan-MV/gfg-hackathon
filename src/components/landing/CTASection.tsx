@@ -15,7 +15,7 @@ const CTASection = () => {
         >
           <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Farm?</h2>
           <p className="text-xl max-w-3xl mx-auto mb-10 text-farmer-100">
-            Join thousands of farmers who are improving yields, reducing costs, and farming more sustainably with FarmTech.
+            Join thousands of farmers who are improving yields, reducing costs, and farming more sustainably with AgroSage.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/">

@@ -4,7 +4,7 @@ import TestimonialCard from "./TestimonialCard";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "Since implementing FarmTech's recommendations, I've reduced water usage by 30% while increasing my crop yield.",
+      quote: "Since implementing AgroSage's recommendations, I've reduced water usage by 30% while increasing my crop yield.",
       name: "John Smith",
       farm: "Green Valley Farm, Iowa",
       image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
