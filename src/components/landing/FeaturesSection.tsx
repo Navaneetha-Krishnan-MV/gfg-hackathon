@@ -131,10 +131,10 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           whileHover={{ 
             y: -15, 
-            boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0 15px 20px -4px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1)",
             transition: { type: "spring", stiffness: 300, damping: 15 }
           }}
-          className={`min-w-[320px] h-[420px] flex-shrink-0 rounded-2xl bg-gradient-to-br ${feature.color} p-8 flex flex-col justify-between border border-gray-800 hover:border-farmer-400 transition-all duration-300`}
+          className={`min-w-[170px] max-w-[400px] lg:max-w-[700px] h-[420px] flex-shrink-0 rounded-2xl bg-gradient-to-br ${feature.color} p-8 flex flex-col justify-between border border-gray-800 hover:border-farmer-400 transition-all duration-300`}
         >
           <div>
             <div className="mb-6 transform transition-transform duration-300 hover:scale-110">
@@ -145,7 +145,7 @@ const FeaturesSection = () => {
           </div>
           <Button 
             variant="outline" 
-            className="w-full mt-6 border-farmer-600 text-farmer-300 hover:bg-farmer-800 hover:text-white hover:border-farmer-300 transition-all duration-300 transform hover:scale-105"
+            className="w-full mt-6 border-farmer-600 text-black hover:bg-farmer-800 hover:text-white hover:border-farmer-300 transition-all duration-300 transform hover:scale-105"
           >
             Learn More
           </Button>
